@@ -2,37 +2,130 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding:20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+*{
+  box-sizing:border-box
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+  background-color: #282c34;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px+2vmin);
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+.buttonsearch{
+  padding: 3px;
+  background-color: transparent;
+  color: black;
+  width: 70px;
+  cursor: pointer;
+  margin-left: 3px; 
+  border-radius: 3px;
+  margin-top: 0px;
+  font-size: 11px;
+}
+.buttonsearch:hover{
+  background-color: #282c34;
+  color: antiquewhite;
+}
+input{
+  width: 40%;
+  min-width: 170px;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 14px;
+  font-stretch:expanded;
+  text-align:start;
+  margin-top: 5px;
+  
+}
+.buttonfilter:hover{
+  background-color: #282c34;
+  color: antiquewhite;
+}
+.buttonfilter{
+  padding: 3px;
+  background-color: transparent;
+  color: black;
+  width: 50px;
+  cursor: pointer;
+  margin-right: 1px; 
+  border-radius: 3px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.buttonyear{
+  background-color: #282c34;
+  color: antiquewhite;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 60px;
+}
+
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  border: 5px solid red; 
+  max-width: 1900px;
+  
+  
+}
+
+
+.movie{
+  padding:5px 25px 10px 25px;
+ max-width: 25%;
+ border: 2px solid blue;
+ height: 600px;
+ width: 600px;
+
+
+ ;
+ }
+   
+
+*{
+  box-sizing: border-box;
+}.search{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:10px
+}
+
+@media screen and(max-width:651px){
+  .movie{max-width:100%;
+  margin:auto}
+}
+@media screen and(min-width:694px)and(max-width:915px)
+{
+  .movie{max-width: 33%}}
+
+@media screen and(min-width:652px)and(max-width:693px){
+  .movie{max-width:50%}
 }
