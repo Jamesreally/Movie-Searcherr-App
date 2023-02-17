@@ -89,8 +89,8 @@ input{
   display: flex;
   flex-wrap: wrap;
   flex-direction:row;
-  border: 5px solid red; 
-  max-width: 1900px;
+ 
+  
   
   
 }
@@ -99,9 +99,11 @@ input{
 .movie{
   padding:5px 25px 10px 25px;
  max-width: 25%;
- border: 2px solid blue;
+
  height: 600px;
- width: 600px;
+ max-height: 600px;
+ width: 500px;
+ max-width: 33.33%; 
 
 
  ;

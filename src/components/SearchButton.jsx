@@ -7,7 +7,7 @@ const SearchComponent = ({
 
   const [movieItem, setMovieItem] = useState([]);
   const [displayItem, setDisplayItem] = useState();
-  const [optionValue, setOptionValue] = useState("");
+  const [OptionValue, setOptionValue] = useState("");
    const[loading, setLoading]=useState("")
   const Errorhandler=useErrorHandler()
    useEffect(() => {
@@ -35,14 +35,14 @@ const SearchComponent = ({
   return(<div>Pls Enter</div>)
 }*/
   const filterYear = () => {
-    const releaseDate = movieItem.filter((item) => item.Year === optionValue);
+    const releaseDate = movieItem.filter((item) => item.Year === OptionValue);
     console.log(releaseDate);
     const abb = releaseDate.map((item) => {
       return <>{item.Title}</>;
     });
     setDisplayfilter(abb);
     setDisplayItem("");
-    console.log(optionValue);
+    console.log(OptionValue);
   };
 
   const MovieList = () => {
@@ -73,7 +73,7 @@ const SearchComponent = ({
       <select>
         {movieItem.map((item) => (
           <>
-            <option className="buttonyear"value={item.Year} onClick={optionHandler}>
+            <option className="buttonyear"value={item.Year} onChange={(e)=>setOptionValue(e.target.value)}>
               {item.Year}
             </option>
           </>
