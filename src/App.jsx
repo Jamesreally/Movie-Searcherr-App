@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import SearchComponent from "./components/SearchButton";
 import { ErrorBoundary } from "react-error-boundary";
-import Fallback from "../../assignment2/src/component/fallback";
+import Fallback from "./components/fallback";
 function App() {
   const [searchInput, setSearchInput] = useState("");
 
