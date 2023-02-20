@@ -3,6 +3,7 @@ import { useState } from "react";
 import SearchComponent from "./components/SearchButton";
 import { ErrorBoundary } from "react-error-boundary";
 import Fallback from "./components/fallback";
+import {FaSearch} from "react-icons/fa";
 function App() {
   const [searchInput, setSearchInput] = useState("");
 
@@ -10,6 +11,7 @@ function App() {
     event.preventDefault();
     setSearchInput(event.target.value);
   };
+ 
   return (
     <ErrorBoundary FallbackComponent={Fallback}>
       <div className="App">

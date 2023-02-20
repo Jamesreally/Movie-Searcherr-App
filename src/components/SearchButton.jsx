@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useErrorHandler } from "react-error-boundary";
+import {FaFilter,FaSearch} from "react-icons/fa";
 
 const SearchComponent = ({ searchInput }) => {
   let movie = {
@@ -74,7 +75,7 @@ const SearchComponent = ({ searchInput }) => {
     <>
       <div>
         <button className="buttonfilter" onClick={filterYear}>
-          fil:Year
+          Year {<FaFilter/>}
         </button>
         <select onChange={optionHandler}>
           <option>Select Year</option>

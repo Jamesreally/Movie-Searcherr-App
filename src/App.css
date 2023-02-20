@@ -4,7 +4,7 @@
 }
 
 .App-header {
-  background-image: url("src/GOT.jpg");
+  background-image: url("./GOT.jpg");
   height: 20px;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
 }
 
 .header {
-  background-image: url("src/GOT.jpg");
+  background-image: url("./GOT.jpg");
   height: 150px;
   display: flex;
   flex-direction: column;
@@ -91,7 +91,7 @@ input {
 }
 
 footer {
-  background-image: url("src/FAST and FURIOUS.jpg");
+  background-image: url("./FAST and FURIOUS.jpg");
   height: 200px;
   display: flex;
   flex-direction: column;
