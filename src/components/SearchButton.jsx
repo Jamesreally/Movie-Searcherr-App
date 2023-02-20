@@ -39,7 +39,7 @@ const SearchComponent = ({ searchInput }) => {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          `http://www.omdbapi.com/?s=${searchInput}&apikey=2dd35d36`
+          `https://www.omdbapi.com/?s=${searchInput}&apikey=2dd35d36`
         );
         const movieData = await res.json();
 
