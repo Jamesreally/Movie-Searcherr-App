@@ -1,133 +1,133 @@
 .App {
+  background-color: #1f2630;
   text-align: center;
 }
 
-
-
-
 .App-header {
-  background-color: #282c34;
-  height: 70px;
+  background-image: url("src/GOT.jpg");
+  height: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding:20px;
+  padding: 20px;
 }
 
-
-
-*{
-  box-sizing:border-box
+* {
+  box-sizing: border-box;
 }
 
-.header{
-  background-color: #282c34;
-  height: 70px;
+.header {
+  background-image: url("src/GOT.jpg");
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px+2vmin);
-  color: white;
+  color: rgb(58, 29, 29);
   padding: 20px;
   cursor: pointer;
 }
-.buttonsearch{
-  padding: 3px;
-  background-color: transparent;
-  color: black;
-  width: 70px;
-  cursor: pointer;
-  margin-left: 3px; 
-  border-radius: 3px;
-  margin-top: 0px;
-  font-size: 11px;
-}
-.buttonsearch:hover{
-  background-color: #282c34;
-  color: antiquewhite;
-}
-input{
+
+input {
   width: 40%;
   min-width: 170px;
   border-radius: 3px;
   padding: 5px;
   font-size: 14px;
-  font-stretch:expanded;
-  text-align:start;
+  font-stretch: expanded;
+  text-align: start;
   margin-top: 5px;
-  
+  border: 5px solid #1f2630;
 }
-.buttonfilter:hover{
-  background-color: #282c34;
-  color: antiquewhite;
+::placeholder {
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
-.buttonfilter{
+.buttonfilter:hover {
+  background-color: white;
+  color: #1f2630;
+}
+.buttonfilter {
   padding: 3px;
-  background-color: transparent;
-  color: black;
+  background-color: #d1d9e4;
+  color: #1f2630;
   width: 50px;
   cursor: pointer;
-  margin-right: 1px; 
+  margin-right: 1px;
   border-radius: 3px;
   margin-top: 10px;
   font-size: 12px;
 }
-.buttonyear{
+.buttonyear {
   background-color: #282c34;
   color: antiquewhite;
   font-size: 12px;
   cursor: pointer;
   border-radius: 3px;
   width: 60px;
+  border: 5px solid#1f2630;
 }
 
-.movies{
+.movies {
   display: flex;
   flex-wrap: wrap;
-  flex-direction:row;
- 
-  
-  
-  
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  border: 2px solid red;
 }
 
+.movie {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  color: antiquewhite;
+  align-self: flex-start;
+  border: 4px solid blue;
+}
 
-.movie{
-  padding:5px 25px 10px 25px;
- max-width: 25%;
+footer {
+  background-image: url("src/FAST and FURIOUS.jpg");
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  font-size: calc(10px+2vmin);
+  color: rgb(1, 7, 12);
+  padding: 20px;
+  cursor: pointer;
+}
 
- height: 600px;
- max-height: 600px;
- width: 500px;
- max-width: 33.33%; 
-
-
- ;
- }
-   
-
-*{
+* {
   box-sizing: border-box;
-}.search{
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  justify-content:center;
-  margin-top:10px
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
 }
 
-@media screen and(max-width:651px){
-  .movie{max-width:100%;
-  margin:auto}
-}
-@media screen and(min-width:694px)and(max-width:915px)
-{
-  .movie{max-width: 33%}}
+@media (min-width: 900px) {
+  .movies {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .header {
+    height: 125px;
+  }
 
-@media screen and(min-width:652px)and(max-width:693px){
-  .movie{max-width:50%}
+  .movie {
+    flex-basis: 25%;
+    height: 600px;
+  }
+  .image {
+    height: 450px;
+  }
 }
