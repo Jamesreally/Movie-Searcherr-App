@@ -12,7 +12,7 @@ function App() {
     setSearchInput(event.target.value);
   };
  
-  return (
+  return( 
     <ErrorBoundary FallbackComponent={Fallback}>
       <div className="App">
         <header className="header">
