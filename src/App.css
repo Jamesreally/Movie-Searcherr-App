@@ -124,10 +124,12 @@ footer {
   }
 
   .movie {
-    flex-basis: 25%;
+    flex-basis: 23%;
     height: 600px;
+    padding: 0px 0px 0px 0px;
   }
   .image {
-    height: 450px;
+    height: 400px;
+    width: 300px;
   }
 }
